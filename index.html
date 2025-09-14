@@ -70,7 +70,7 @@
       for (const chain of chains) {
         try {
           const response = await fetch(
-            `https://api.opensea.io/api/v1/assets?order_direction=desc&limit=20&collection=${slug}&asset_contract_address=${contract}&order_by=token_id&include_orders=false&chain=${chain}`
+            `https://api.opensea.io/api/v1/assets?order_direction=desc&limit=20&collection=lumane-sagoal&asset_contract_address=0xTU_CONTRACT_ADDRESS&order_by=token_id&include_orders=false`
           );
           const data = await response.json();
 
